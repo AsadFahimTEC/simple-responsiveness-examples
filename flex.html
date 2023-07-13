@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flexbox</title>
+    <style>
+        .box{
+            background-color: slateblue;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+
+        .item{
+            width: 100px;
+            gap: 10px;
+            height: 100px;
+            background-color: aquamarine;
+            border: 2px solid tomato;
+        }
+
+        .container-2{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+        @media screen and(max-width: 576px) {
+            .container{
+                flex-direction: column;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <h4>Flexbox Layout</h4>
+    <div class="container">
+        <div class="box">Item - 1
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure enim nisi commodi ab, magnam aut veritatis eos nam eaque dicta!</p>
+        </div>
+        <div class="box">Item - 2
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, tenetur. Laudantium mollitia aliquid accusamus est, quod quasi accusantium nostrum sapiente!
+            </p>
+        </div>
+    </div>
+
+    <div class="container-2">
+     <div class="item">Item -1</div>
+     <div class="item">Item -2</div>
+     <div class="item">Item -3</div>
+     <div class="item">Item -4</div>
+     <div class="item">Item -5</div>
+     <div class="item">Item -6</div>
+     <div class="item">Item -7</div>
+     <div class="item">Item -8</div>
+     <div class="item">Item -9</div>
+     <div class="item">Item -10</div>
+    </div>
+    
+
+   
+
+
+   
+</body>
+</html>
